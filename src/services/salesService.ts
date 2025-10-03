@@ -68,7 +68,7 @@ const mockData: Sale[] = [
 ];
 
 export class SalesService {
-  private static apiEndpoint = 'http://localhost:8080/vendas';
+  private static apiEndpoint = 'https://projetojt-api-rest-production.up.railway.app/vendas';
   private static useMockData = true;
 
   static setUseMockData(value: boolean) {

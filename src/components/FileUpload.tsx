@@ -65,7 +65,7 @@ export default function FileUpload({ onUploadSuccess }: FileUploadProps) {
 
     console.log('Vendas processadas:', vendas);
 
-    const response = await fetch('http://localhost:8080/vendas', {
+    const response = await fetch('https://projetojt-api-rest-production.up.railway.app/vendas', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(vendas)
